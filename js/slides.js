@@ -1,5 +1,6 @@
 import Reveal from 'reveal.js';
 import 'reveal.js/dist/reveal.css';
+import 'reveal.js/css/print/pdf.scss';
 import 'reveal.js/dist/theme/black.css';
 import 'reveal.js/plugin/highlight/monokai.css';
 import * as RevealHighlight from 'reveal.js/plugin/highlight/highlight.js';

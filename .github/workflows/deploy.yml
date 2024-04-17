@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './dist/reveal-multi-slides-template'
+          path: './dist/practical-react-essentials'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

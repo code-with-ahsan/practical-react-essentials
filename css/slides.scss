@@ -76,3 +76,7 @@ img.meme {
   --r-main-font: 'Nunito', Helvetica, sans-serif;
   --r-heading-font: 'Nunito', Helvetica, sans-serif;
 }
+
+section code:not(.hljs) {
+  color: yellow;
+}
