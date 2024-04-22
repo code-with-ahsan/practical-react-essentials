@@ -4,9 +4,9 @@
   "description": "",
   "license": "MIT",
   "scripts": {
-    "dev": "npm run extract && webpack serve",
+    "dev": "concurrently \"npm run extract\" \"webpack serve\"",
     "build": "npm run extract && cross-env NODE_ENV=production webpack --mode production",
-    "extract": "node scripts/extractSlideData.js",
+    "extract": "nodemon scripts/extractSlideData.js",
     "lint": "eslint ./js/**/* --fix",
     "serve:prod": "npm run build && npx http-server ./dist -c-1 -o /practical-react-essentials/"
   },
@@ -36,6 +36,7 @@
     "babel-plugin-transform-html-import-to-string": "0.0.1",
     "clean-webpack-plugin": "^4.0.0",
     "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
     "copy-webpack-plugin": "^12.0.2",
     "core-js": "^3.12.1",
     "cross-env": "^7.0.3",
@@ -51,6 +52,7 @@
     "jest": "^29.7.0",
     "marked": "^4.0.12",
     "mini-css-extract-plugin": "^2.8.1",
+    "nodemon": "^3.1.0",
     "postcss": "^8.4.38",
     "postcss-loader": "^8.1.1",
     "prettier": "^2.8.0",
